@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>Registration form</title>
+<link rel='stylesheet' href='style.css' type='text/css' />
+<script src="index.js"></script>
+</head>
+<body onload="document.registration.userid.focus();">
+    <div class="box">
+        <h1>REGISTRATION FORM</h1>
+        <form name="registration" onSubmit="return formValidation();">
+            <ul>
+                <li><label for="regid">Registration Id:</label></li>
+                <li><input type="text" name="regid" size="12" /></li>
+                <li><label for="username">Name:</label></li>
+                <li><input type="text" name="username" size="50" /></li>
+                <li><label for="phonenum">Phone No.:</label></li>
+                <li><input type="text" name="phonenum" size="12"/></li>
+                <li><label for="branchname">Branch:</label></li>
+                <li><select name="branchname">
+                    <option selected="" value="Default">(Please select your branch)</option>
+                    <option value="CSE">Computer Science & Engineering</option>
+                    <option value="IT">Information Technology</option>
+                    <option value="ETC">Electronics & Telecomm. Engineering</option>
+                    <option value="ME">Mechanical Engineering</option>
+                    <option value="EE">Electrical Engineering</option>
+                    </select></li>
+                <li><label for="domain_name">Domain:</label></li>
+                <li><select name="domain_name">
+                    <option selected="" value="Default">(Please select your domain)</option>
+                    <option value="WD">Web Development</option>
+                    <option value="AD">App Development</option>
+                    <option value="CP">Competitive Programming</option>
+                    <option value="GD">Game Development</option>
+                    <option value="CS">Cyber Security</option>
+                    <option value="AI/ML">Artificial Intelligence/Machine Learning</option>
+                    </select></li>  
+                <li><label for="email">Email:</label></li>
+                <li><input type="text" name="email" size="50" /></li>
+                <li><input type="submit" name="submit" value="SUBMIT" /></li>
+            </ul>
+        </form>
+    </div>
+</body>
+</html>
